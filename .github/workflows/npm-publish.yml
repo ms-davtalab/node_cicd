@@ -14,4 +14,4 @@ jobs:
       - run: |
          docker build -t node-hw:latest .
          docker stop first-node-hw || true
-         docker run --rm --name first-node-hw -p 3000:3000 node-hw:latest 
+         docker run --rm --name first-node-hw -d -p 3000:3000 node-hw:latest 
